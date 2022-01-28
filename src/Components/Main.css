@@ -1,0 +1,26 @@
+.mainContainer {
+    height: 92%;
+    position: absolute;
+    background: rgb(237, 237, 237);
+    width: 100%;
+    overflow: hidden;
+}
+
+.mainPortada{
+    width: 100%;
+    margin: auto;
+    height: 30%;
+    border-radius: 0px 0px 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2aa42;
+}
+
+.mainProfile{
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    box-shadow: rgb(0 0 0 / 30%) 0px 0px 0px 6px;
+}
+

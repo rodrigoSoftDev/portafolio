@@ -1,0 +1,55 @@
+.ReactCollapse--collapse{
+    transition: height 500ms;
+}
+
+.cardContainer{
+    width: 85%;
+    background: #f7f7f7;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 2.5rem 2rem -2rem hsl(200 50% 20% / 40%);
+    margin-top: 20px;
+}
+
+.cardTitle{
+    width: 90%;
+    border-bottom: 1px solid #dddddd;
+    padding: 5px;
+    margin: auto;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardImg{
+    height: 40px;
+}
+
+.cardHeader{
+    font-size: 1.3em;
+    color: #333333;
+}
+
+.mainContainerInner{
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+
+.cardContent{
+    padding: 15px;
+}
+
+.skillName{
+    width: 40%;
+    color: #333333;
+    font-size: 1.1em;
+}
+
+.skillItem{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px auto;
+}
