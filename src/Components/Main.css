@@ -10,17 +10,36 @@
     width: 100%;
     margin: auto;
     height: 30%;
-    border-radius: 0px 0px 15px 15px;
+    border-radius: 0px 0px 40px 40px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: #e2aa42;
 }
 
 .mainProfile{
     border-radius: 50%;
-    height: 130px;
-    width: 130px;
+    height: 115px;
+    width: 115px;
     box-shadow: rgb(0 0 0 / 30%) 0px 0px 0px 6px;
 }
 
+.mainInfoName{
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.mainInfoPos{
+    display: flex;
+    color: white;
+    font-size: 1em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.mainInfoContainer{
+    border-right: 2px white solid;
+    padding-right: 10px;
+}

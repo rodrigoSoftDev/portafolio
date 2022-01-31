@@ -18,6 +18,10 @@ import java from "./Assets/java.png";
 
 
 export const data = {
+    personalData: {
+        name: "Rodrigo García",
+        position: "Full Stack Developer"
+    },
     cards: [
         {
             type: "text",
