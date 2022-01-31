@@ -3,8 +3,9 @@ import { Collapse } from 'react-collapse';
 import "./Card.css";
 import CardTitle from "./CardTitle";
 import { data } from "../../Data";
-import SkillBar from 'react-skillbars';
-import Skills from "./Skills";
+import List from "./List";
+import Text from "./Text";
+import Chronology from "./Chronology";
 
 
 const Card = () => {
@@ -15,19 +16,24 @@ const Card = () => {
       if (content === showContent) setShowContent(null);
       else setShowContent(content);
     } else setShowContent(content);
+    if (content === "Idiomas") window.scrollTo(0,document.body.scrollHeight);
+  };
+
+  const currentCard = card => {
+    if (card.type === "list") return <List list={data[card.toRender]}/>;
+    else if (card.type === "chronology") return <Chronology chronology={data[card.toRender]}/>;
+    else if (card.type === "text") return <Text text={data[card.toRender].text} />
+    else return <div> in Process </div>
   };
 
   return (
     <>
       {data.cards.map(card => 
-        <div className="cardContainer">
+        <div className="cardContainer" style={{ marginBottom: card.toRender === "languaje"  && "30px" }}>
           <CardTitle image={card.pic} title={card.title} onClick={() => openContent(card.title)} />
           <Collapse isOpened={showContent === card.title}>
               <div className="cardContent">
-                {card.type === "skills" 
-                  ? <Skills />
-                  : <div> in Process </div>
-                }
+                {currentCard(card)}
               </div>
           </Collapse>
         </div>  

@@ -1,6 +1,6 @@
 .mainContainer {
     height: 92%;
-    position: absolute;
+    position: relative;
     background: rgb(237, 237, 237);
     width: 100%;
     overflow: hidden;

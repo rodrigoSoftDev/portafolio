@@ -22,8 +22,12 @@
     align-items: center;
 }
 
+.downImg{
+    height: 15px;
+}
+
 .cardImg{
-    height: 40px;
+    height: 30px;
 }
 
 .cardHeader{
@@ -41,15 +45,47 @@
     padding: 15px;
 }
 
-.skillName{
-    width: 40%;
+.listName{
     color: #333333;
     font-size: 1.1em;
 }
 
-.skillItem{
+.listItem{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin: 10px auto;
+}
+
+.aboutMeText {
+    color: #333333;
+    line-height: 2;
+}
+
+.contactName{
+    color: #333333;
+    font-size: 1em;
+}
+
+.chronologyItem {
+    border-left: 1px solid #e2aa42;
+    padding: 5px;
+    margin-bottom: 10px;
+    color: #333333;
+    padding-left: 15px;
+    line-height: 2;
+}
+
+.chronologyTitle{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.chronologyYear{
+    color: #e2aa42;
+    font-size: 0.8em;
+}
+
+.chronologyName{
+    font-size: 0.8em;
 }

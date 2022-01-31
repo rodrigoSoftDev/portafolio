@@ -1,4 +1,5 @@
 import react from 'react';
+import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Main from './Components/Main';
 
@@ -15,6 +16,7 @@ const App = () => {
     <div style={styles.container}>
       <Header />
       <Main />
+      <Footer />
     </div>
   );
 };

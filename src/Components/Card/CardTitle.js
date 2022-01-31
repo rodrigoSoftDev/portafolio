@@ -5,7 +5,7 @@ const CardTitle = ({ onClick, title, image }) => {
   return (
     <div className="cardTitle" onClick={onClick}> 
         <div className="cardHeader"> {title} </div>
-        <img className="cardImg" src={image} />
+        <img className="downImg" src={image} />
     </div>  
   );
 };

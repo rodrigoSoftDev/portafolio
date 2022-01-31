@@ -2,15 +2,6 @@ import react from "react";
 import Card from "./Card/Card";
 import "./Main.css";
 
-const styles = {
-    profile: {
-        borderRadius: "50%",
-        height: "130px",
-        width: "130px",
-        boxShadow: "rgb(0 0 0 / 30%) 0px 0px 0px 6px",
-    },
-};
-
 const Main = () => {
   return (
     <div className="mainContainer">

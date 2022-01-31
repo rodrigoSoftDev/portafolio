@@ -1,0 +1,36 @@
+.headerContainer {
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #323232ed;
+}
+
+.social{
+    height: 35%;
+    margin: auto 10px auto 10px;
+    opacity: 0.7;
+}
+
+.socialContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.presentationContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.languaje{
+    height: 35%;
+    margin: auto 10px auto 10px;
+    opacity: 0.7;
+}
