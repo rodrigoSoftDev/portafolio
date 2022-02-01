@@ -2,13 +2,12 @@ import react, { useState } from "react";
 import { Collapse } from 'react-collapse';
 import "./Card.css";
 import CardTitle from "./CardTitle";
-import { data } from "../../Data";
 import List from "./List";
 import Text from "./Text";
 import Chronology from "./Chronology";
 
 
-const Card = () => {
+const Card = ({ data }) => {
   const [showContent, setShowContent] = useState(null);
 
   const openContent = content => {
@@ -16,7 +15,6 @@ const Card = () => {
       if (content === showContent) setShowContent(null);
       else setShowContent(content);
     } else setShowContent(content);
-    if (content === "Idiomas") window.scrollTo(0,document.body.scrollHeight);
   };
 
   const currentCard = card => {
@@ -26,12 +24,14 @@ const Card = () => {
     else return <div> in Process </div>
   };
 
+  const isOpen = card => showContent === card.title;
+
   return (
     <>
       {data.cards.map(card => 
         <div className="cardContainer" style={{ marginBottom: card.toRender === "languaje"  && "30px" }}>
-          <CardTitle image={card.pic} title={card.title} onClick={() => openContent(card.title)} />
-          <Collapse isOpened={showContent === card.title}>
+          <CardTitle isOpen={isOpen(card)} image={card.pic} title={card.title} onClick={() => openContent(card.title)} />
+          <Collapse isOpened={isOpen(card)}>
               <div className="cardContent">
                 {currentCard(card)}
               </div>

@@ -10,11 +10,13 @@
     width: 100%;
     margin: auto;
     height: 30%;
-    border-radius: 0px 0px 40px 40px;
+    border-radius: 0px 0px 15px 15px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #e2aa42;
+    background-image: url("../Assets/portada.png"); 
+    background-size: contain;
+    z-index: 99;
 }
 
 .mainProfile{
@@ -40,6 +42,7 @@
 }
 
 .mainInfoContainer{
-    border-right: 2px white solid;
+    border-right: 2px #f8f8f88f solid;
     padding-right: 10px;
+
 }

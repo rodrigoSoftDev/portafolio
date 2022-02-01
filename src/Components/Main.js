@@ -1,9 +1,8 @@
 import react from "react";
-import { data } from "../Data";
 import Card from "./Card/Card";
 import "./Main.css";
 
-const Main = () => {
+const Main = ({ data }) => {
   return (
     <div className="mainContainer">
         <div className="mainContainerInner">
@@ -14,7 +13,7 @@ const Main = () => {
                   <div className="mainInfoPos"> {data.personalData.position}</div>
                 </div>
             </div>
-            <Card />
+            <Card  data={data}/>
         </div>
     </div>
   );
