@@ -5,7 +5,7 @@ import CardTitle from "./CardTitle";
 import List from "./List";
 import Text from "./Text";
 import Chronology from "./Chronology";
-
+import Image from "./Image";
 
 const Card = ({ data }) => {
   const [showContent, setShowContent] = useState(null);
@@ -21,6 +21,7 @@ const Card = ({ data }) => {
     if (card.type === "list") return <List list={data[card.toRender]}/>;
     else if (card.type === "chronology") return <Chronology chronology={data[card.toRender]}/>;
     else if (card.type === "text") return <Text text={data[card.toRender].text} />
+    else if (card.type === "image") return <Image image={data[card.toRender].pic} />
     else return <div> in Process </div>
   };
 

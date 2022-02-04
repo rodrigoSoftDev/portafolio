@@ -15,7 +15,7 @@ import reactJs from "./Assets/reactJS.png";
 import python from "./Assets/python.png";
 import sql from "./Assets/sql.png";
 import java from "./Assets/java.png";
-
+import myPdf from "./Assets/curriculum.jpg";
 
 export const englishData = {
     social: {
@@ -69,6 +69,12 @@ export const englishData = {
             type: "list",
             toRender: "languaje",
             title: "Languajes",
+            pic: down
+        },
+        {
+            type: "image",
+            toRender: "curriculum",
+            title: "Curriculum",
             pic: down
         },
     ],
@@ -186,6 +192,9 @@ export const englishData = {
             pic: cmm
         },
     ],
+    curriculum: { 
+        pic: myPdf,
+    },
 };
 
 export const spanishData = {
@@ -197,7 +206,7 @@ export const spanishData = {
         {
             type: "text",
             toRender: "aboutMe",
-            title: "Sobre mi",
+            title: "Sobre mí",
             pic: down
         },
         {
@@ -234,6 +243,12 @@ export const spanishData = {
             type: "list",
             toRender: "languaje",
             title: "Idiomas",
+            pic: down
+        },
+        {
+            type: "image",
+            toRender: "curriculum",
+            title: "Curriculum",
             pic: down
         },
     ],
@@ -351,4 +366,7 @@ export const spanishData = {
             pic: cmm
         },
     ],
+    curriculum: { 
+        pic: myPdf,
+    },
 };

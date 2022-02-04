@@ -11,7 +11,6 @@ const App = () => {
     <div style={{ height: "100vh", width: "100vw" }}>
       <Header setLanguaje={setLanguaje} currentLanguaje={languaje}/>
       <Main data={languaje === "ES" ?  spanishData : englishData}/>
-      <Footer />
     </div>
   );
 };

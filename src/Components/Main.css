@@ -1,15 +1,14 @@
 .mainContainer {
-    height: 92%;
     position: relative;
     background: rgb(237, 237, 237);
     width: 100%;
-    overflow: hidden;
+    padding-bottom: 20px;
 }
 
 .mainPortada{
     width: 100%;
     margin: auto;
-    height: 30%;
+    height: 175px;
     border-radius: 0px 0px 15px 15px;
     display: flex;
     justify-content: space-around;

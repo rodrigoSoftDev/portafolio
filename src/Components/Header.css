@@ -8,7 +8,7 @@
 }
 
 .social{
-    height: 35%;
+    height: 45%;
     margin: auto 10px auto 10px;
     opacity: 0.7;
 }
@@ -18,7 +18,7 @@
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 100%;
+    height: 80%;
 }
 
 .presentationContainer {
@@ -26,11 +26,11 @@
     justify-content: flex-start;
     align-items: center;
     width: 50%;
-    height: 100%;
+    height: 80%;
 }
 
 .languaje{
-    height: 35%;
+    height: 45%;
     margin: auto 10px auto 10px;
     opacity: 0.7;
 }
