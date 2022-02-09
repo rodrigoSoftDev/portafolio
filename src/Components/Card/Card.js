@@ -6,15 +6,18 @@ import List from "./List";
 import Text from "./Text";
 import Chronology from "./Chronology";
 import Image from "./Image";
+import read from "../../Assets/read.png";
+import noRead from "../../Assets/noread.png";
 
 const Card = ({ data }) => {
   const [showContent, setShowContent] = useState(null);
 
-  const openContent = content => {
+  const openContent = card => {
     if (showContent) {
-      if (content === showContent) setShowContent(null);
-      else setShowContent(content);
-    } else setShowContent(content);
+      if (card.title === showContent) setShowContent(null);
+      else setShowContent(card.title);
+    } else setShowContent(card.title);
+    card.read = true;
   };
 
   const currentCard = card => {
@@ -30,17 +33,19 @@ const Card = ({ data }) => {
   return (
     <>
       {data.cards.map(card => 
-        <div className="cardContainer" style={{ marginBottom: card.toRender === "languaje"  && "30px" }}>
-          <CardTitle isOpen={isOpen(card)} image={card.pic} title={card.title} onClick={() => openContent(card.title)} />
-          <Collapse isOpened={isOpen(card)}>
-              <div className="cardContent">
-                {currentCard(card)}
-              </div>
-          </Collapse>
-        </div>  
+        <div className="readCard">
+          <img src={card.read ? read : noRead} className="tickImg" />
+          <div className="cardContainer">
+            <CardTitle isOpen={isOpen(card)} image={card.pic} title={card.title} onClick={() => openContent(card)} />
+            <Collapse isOpened={isOpen(card)}>
+                <div className="cardContent">
+                  {currentCard(card)}
+                </div>
+            </Collapse>
+          </div>  
+        </div>
       )}
     </>
-
   );
 };
 

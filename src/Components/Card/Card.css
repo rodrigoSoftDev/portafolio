@@ -6,6 +6,7 @@
     width: 85%;
     background: #f7f7f7;
     margin: auto;
+    margin-left: 0px;
     border-radius: 15px;
     box-shadow: 0 2.5rem 2rem -2rem hsl(200 50% 20% / 40%);
     margin-top: 20px;
@@ -93,4 +94,16 @@
     position: absolute;
     top: 5px;
     left: 5px;
+}
+
+.readCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tickImg{
+    width: 6%;
+    margin: 10px;
+    margin-top: 20px;
 }
